@@ -1,0 +1,33 @@
+.about-me{
+    @extend %padding;
+
+    h1{
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+
+    p{
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    .overlay-image{
+        display: grid;
+        place-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        img{
+            border: 5px solid rgb(9,97,146);
+        }
+    }
+
+    .skills-h1{
+        padding-top: 50px;
+    }
+}
+
+.hidden--about-me{
+    display: none;
+}

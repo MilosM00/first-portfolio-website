@@ -1,0 +1,127 @@
+@import "welcome";
+@import "about";
+@import "projects";
+@import "scrollbar";
+
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+%padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header{
+    background-color: rgb(9,97,146);
+
+    .ul-btn{
+        padding-top: 30px;
+
+        li{
+            list-style: none;
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                color: rgb(248, 248, 255);
+                font-size: 20px;
+                font-weight: 800;
+                padding: 10px;
+
+                &:hover{
+                    color: rgb(248, 248, 255);
+                }
+            }
+
+            :root{
+                --background-color: rgb(9,97,146);
+            }
+
+            .button-home::after{
+                content: "";
+                width: 82px;
+                height: 2px;
+                background-color: var(--background-color);
+                display: grid;               
+            }
+
+            .button-about::after{
+                content: "";
+                width: 88px;
+                height: 2px;
+                background-color: var(--background-color);
+                display: grid;               
+            }
+
+            .button-projects::after{
+                content: "";
+                width: 115px;
+                height: 2px;
+                background-color: var(--background-color);
+                display: grid;               
+            }
+        }
+    }
+
+    .ul-sm{
+        text-align: center;
+        padding-top: 20px;
+
+        li{
+            list-style: none;
+            display: inline-block;
+
+            .social-media{
+                font-size: 40px;
+                text-decoration: none;
+                color: rgb(248, 248, 255);
+                font-weight: 800;
+                padding: 10px;
+    
+                &:hover{
+                    color: rgb(14,17,17);
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+}
+
+.after-footer{
+    background-color:rgb(14,17,17);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    p{
+        text-align: center;
+        color:rgb(248, 248, 255);
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(248, 248, 255);
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-height: 1030px){
+    .after-footer{
+        position: relative;
+    }
+}
+
+@media (max-width: 767px ){
+    .ul-btn{
+        text-align: center;
+    }
+}
