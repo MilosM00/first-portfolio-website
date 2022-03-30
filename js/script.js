@@ -25,9 +25,9 @@ const buttonsNav = function (){
         aboutSection.classList.add(`hidden--about-me`);
         projectsSection.classList.add(`hidden--projects`);
 
-        buttonHome.style.setProperty(`--background-color`, `rgb(248, 248, 255)`);
-        buttonAbout.style.setProperty(`--background-color`, `rgb(9,97,146)`);
-        buttonProjects.style.setProperty(`--background-color`, `rgb(9,97,146)`);
+        buttonHome.style.backgroundColor = `rgb(23, 169, 248)`;
+        buttonAbout.style.backgroundColor = `rgb(9, 97, 146)`;
+        buttonProjects.style.backgroundColor = `rgb(9, 97, 146)`;
     });
 
     buttonAbout.addEventListener(`click`, () =>{
@@ -60,9 +60,9 @@ const displayAbout = function(){
     welcomeSection.classList.add(`hidden--welcome`);
     projectsSection.classList.add(`hidden--projects`);
 
-    buttonAbout.style.setProperty(`--background-color`, `rgb(248, 248, 255)`);
-    buttonHome.style.setProperty(`--background-color`, `rgb(9,97,146)`);
-    buttonProjects.style.setProperty(`--background-color`, `rgb(9,97,146)`);
+    buttonAbout.style.backgroundColor = `rgb(23, 169, 248)`;
+    buttonHome.style.backgroundColor = `rgb(9, 97, 146)`;
+    buttonProjects.style.backgroundColor = `rgb(9, 97, 146)`;
 };
 
 const displayProjects = function(){
@@ -70,7 +70,7 @@ const displayProjects = function(){
     welcomeSection.classList.add(`hidden--welcome`);
     aboutSection.classList.add(`hidden--about-me`);
 
-    buttonProjects.style.setProperty(`--background-color`, `rgb(248, 248, 255)`);
-    buttonAbout.style.setProperty(`--background-color`, `rgb(9,97,146)`);
-    buttonHome.style.setProperty(`--background-color`, `rgb(9,97,146)`);
+    buttonProjects.style.backgroundColor = `rgb(23, 169, 248)`;
+    buttonHome.style.backgroundColor = `rgb(9, 97, 146)`;
+    buttonAbout.style.backgroundColor = `rgb(9, 97, 146)`;
 };

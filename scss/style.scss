@@ -37,32 +37,19 @@ header{
                 }
             }
 
-            :root{
-                --background-color: rgb(9,97,146);
+            .button-home{
+                background-color: rgb(23, 169, 248);
+                border-radius: 30px;
             }
 
-            .button-home::after{
-                content: "";
-                width: 82px;
-                height: 2px;
-                background-color: var(--background-color);
-                display: grid;               
+            .button-about{
+                background-color: rgb(9,97,146);
+                border-radius: 30px;
             }
 
-            .button-about::after{
-                content: "";
-                width: 88px;
-                height: 2px;
-                background-color: var(--background-color);
-                display: grid;               
-            }
-
-            .button-projects::after{
-                content: "";
-                width: 115px;
-                height: 2px;
-                background-color: var(--background-color);
-                display: grid;               
+            .button-projects{
+                background-color: rgb(9,97,146);
+                border-radius: 30px;
             }
         }
     }
