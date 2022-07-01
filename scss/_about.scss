@@ -17,8 +17,15 @@
         place-items: center;
         padding-top: 50px;
         padding-bottom: 50px;
-
-        img{
+        
+        .img{
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+            width: 300px;
+            height: 400px;
+            color: rgb(255,255,255);
+            background-color: rgb(0,0,0);
             border: 5px solid rgb(9,97,146);
         }
     }
